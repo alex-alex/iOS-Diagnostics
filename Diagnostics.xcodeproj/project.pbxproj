@@ -60,16 +60,6 @@
 		ADE9AE5C1A14B41C00D71C11 /* ELLReportSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE9AE5A1A14B41C00D71C11 /* ELLReportSectionViewController.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AD646E3D1A0D68BB004B3AC9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD646E181A0D68BB004B3AC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD646E1F1A0D68BB004B3AC9;
-			remoteInfo = "iOS Diagnostics";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0B52BD482BBC471747C4A800 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF701B36699FB5B8796459E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +124,6 @@
 		AD646E311A0D68BB004B3AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD646E331A0D68BB004B3AC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AD646E361A0D68BB004B3AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AD646E3C1A0D68BB004B3AC9 /* DiagnosticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiagnosticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD646E411A0D68BB004B3AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD646E4C1A0D7062004B3AC9 /* ELLConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLConfigViewController.h; sourceTree = "<group>"; };
 		AD646E4D1A0D7062004B3AC9 /* ELLConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELLConfigViewController.m; sourceTree = "<group>"; };
 		AD646E511A0D899C004B3AC9 /* ELLPowerLogDownloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELLPowerLogDownloadService.h; sourceTree = "<group>"; };
@@ -187,13 +175,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD646E391A0D68BB004B3AC9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -204,6 +185,7 @@
 				0B52BD482BBC471747C4A800 /* libPods.a */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		AA143FA8E9069A6DC110CFA1 /* Pods */ = {
@@ -349,10 +331,8 @@
 			isa = PBXGroup;
 			children = (
 				AD646E221A0D68BB004B3AC9 /* iOS Diagnostics */,
-				AD646E3F1A0D68BB004B3AC9 /* iOS DiagnosticsTests */,
 				AD646E211A0D68BB004B3AC9 /* Products */,
 				AA143FA8E9069A6DC110CFA1 /* Pods */,
-				5176E0DA24C311E7DBFAC213 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -360,7 +340,6 @@
 			isa = PBXGroup;
 			children = (
 				AD646E201A0D68BB004B3AC9 /* Diagnostics.app */,
-				AD646E3C1A0D68BB004B3AC9 /* DiagnosticsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -368,19 +347,18 @@
 		AD646E221A0D68BB004B3AC9 /* iOS Diagnostics */ = {
 			isa = PBXGroup;
 			children = (
+				AD646E271A0D68BB004B3AC9 /* AppDelegate.h */,
+				AD646E281A0D68BB004B3AC9 /* AppDelegate.m */,
 				AD646E5F1A0D8B75004B3AC9 /* Models */,
 				AD646E631A0E0CC0004B3AC9 /* View Models */,
 				AD646E5B1A0D8B35004B3AC9 /* Log Analysers */,
 				AD646E551A0D89D2004B3AC9 /* External */,
 				AD646E501A0D895F004B3AC9 /* Services */,
 				AD646E4F1A0D7696004B3AC9 /* View Controllers */,
-				AD646E271A0D68BB004B3AC9 /* AppDelegate.h */,
-				AD646E281A0D68BB004B3AC9 /* AppDelegate.m */,
-				AD646E301A0D68BB004B3AC9 /* Main.storyboard */,
-				AD646E331A0D68BB004B3AC9 /* Images.xcassets */,
-				AD646E351A0D68BB004B3AC9 /* LaunchScreen.xib */,
 				AD1269EE1A0FE95D003A823A /* Test Data */,
+				FA10ECBF1BD121970069397B /* Resources */,
 				AD646E231A0D68BB004B3AC9 /* Supporting Files */,
+				5176E0DA24C311E7DBFAC213 /* Frameworks */,
 			);
 			path = "iOS Diagnostics";
 			sourceTree = "<group>";
@@ -390,22 +368,6 @@
 			children = (
 				AD646E241A0D68BB004B3AC9 /* Info.plist */,
 				AD646E251A0D68BB004B3AC9 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AD646E3F1A0D68BB004B3AC9 /* iOS DiagnosticsTests */ = {
-			isa = PBXGroup;
-			children = (
-				AD646E401A0D68BB004B3AC9 /* Supporting Files */,
-			);
-			path = "iOS DiagnosticsTests";
-			sourceTree = "<group>";
-		};
-		AD646E401A0D68BB004B3AC9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AD646E411A0D68BB004B3AC9 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -547,6 +509,16 @@
 			path = Signal;
 			sourceTree = "<group>";
 		};
+		FA10ECBF1BD121970069397B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD646E331A0D68BB004B3AC9 /* Images.xcassets */,
+				AD646E351A0D68BB004B3AC9 /* LaunchScreen.xib */,
+				AD646E301A0D68BB004B3AC9 /* Main.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -559,6 +531,7 @@
 				AD646E1D1A0D68BB004B3AC9 /* Frameworks */,
 				AD646E1E1A0D68BB004B3AC9 /* Resources */,
 				391FA5B41AF1ACF7F4064FBE /* Copy Pods Resources */,
+				CE6836E282A8D126683E17F7 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -569,40 +542,18 @@
 			productReference = AD646E201A0D68BB004B3AC9 /* Diagnostics.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AD646E3B1A0D68BB004B3AC9 /* DiagnosticsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD646E491A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "DiagnosticsTests" */;
-			buildPhases = (
-				AD646E381A0D68BB004B3AC9 /* Sources */,
-				AD646E391A0D68BB004B3AC9 /* Frameworks */,
-				AD646E3A1A0D68BB004B3AC9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD646E3E1A0D68BB004B3AC9 /* PBXTargetDependency */,
-			);
-			name = DiagnosticsTests;
-			productName = "iOS DiagnosticsTests";
-			productReference = AD646E3C1A0D68BB004B3AC9 /* DiagnosticsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AD646E181A0D68BB004B3AC9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Electric Labs";
 				TargetAttributes = {
 					AD646E1F1A0D68BB004B3AC9 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 3UZ3V9PE8J;
-					};
-					AD646E3B1A0D68BB004B3AC9 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = AD646E1F1A0D68BB004B3AC9;
+						DevelopmentTeam = FDEPQUD75A;
 					};
 				};
 			};
@@ -620,7 +571,6 @@
 			projectRoot = "";
 			targets = (
 				AD646E1F1A0D68BB004B3AC9 /* Diagnostics */,
-				AD646E3B1A0D68BB004B3AC9 /* DiagnosticsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -634,13 +584,6 @@
 				AD646E321A0D68BB004B3AC9 /* Main.storyboard in Resources */,
 				AD646E371A0D68BB004B3AC9 /* LaunchScreen.xib in Resources */,
 				AD646E341A0D68BB004B3AC9 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD646E3A1A0D68BB004B3AC9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +603,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE6836E282A8D126683E17F7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F24DC00562CB4F6E63DD7246 /* Check Pods Manifest.lock */ = {
@@ -732,22 +690,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD646E381A0D68BB004B3AC9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AD646E3E1A0D68BB004B3AC9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD646E1F1A0D68BB004B3AC9 /* Diagnostics */;
-			targetProxy = AD646E3D1A0D68BB004B3AC9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD646E301A0D68BB004B3AC9 /* Main.storyboard */ = {
@@ -789,6 +732,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -856,6 +800,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iOS Diagnostics/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electriclabs.iOS-Diagnostics";
 				PRODUCT_NAME = Diagnostics;
 				PROVISIONING_PROFILE = "";
 			};
@@ -870,42 +815,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "iOS Diagnostics/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.electriclabs.iOS-Diagnostics";
 				PRODUCT_NAME = Diagnostics;
 				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		AD646E4A1A0D68BB004B3AC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "iOS DiagnosticsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = DiagnosticsTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Diagnostics.app/iOS Diagnostics";
-			};
-			name = Debug;
-		};
-		AD646E4B1A0D68BB004B3AC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "iOS DiagnosticsTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = DiagnosticsTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Diagnostics.app/iOS Diagnostics";
 			};
 			name = Release;
 		};
@@ -926,15 +838,6 @@
 			buildConfigurations = (
 				AD646E471A0D68BB004B3AC9 /* Debug */,
 				AD646E481A0D68BB004B3AC9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD646E491A0D68BB004B3AC9 /* Build configuration list for PBXNativeTarget "DiagnosticsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD646E4A1A0D68BB004B3AC9 /* Debug */,
-				AD646E4B1A0D68BB004B3AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
